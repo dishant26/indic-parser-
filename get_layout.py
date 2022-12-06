@@ -50,8 +50,8 @@ import yaml
 from detectron2.data.datasets import register_coco_instances
 
 
-tessdata_dir_config = r'--tessdata-dir "/content/indic-parser/configs/tessdata"'
-os.environ["TESSDATA_PREFIX"] = '/content/indic-parser/configs/tessdata'
+tessdata_dir_config = r'--tessdata-dir "/content/indic-parser-/configs/tessdata"'
+os.environ["TESSDATA_PREFIX"] = '/content/indic-parser-/configs/tessdata'
 languages=pytesseract.get_languages(config=tessdata_dir_config)
 
 input_lang='san_iitb'
